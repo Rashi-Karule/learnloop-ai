@@ -1,43 +1,16 @@
-# LearnLoop AI — Frontend
+# React + Vite
 
-React frontend for LearnLoop AI, built with Vite, Tailwind CSS, and React Router.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Getting started
+Currently, two official plugins are available:
 
-Make sure you have [Node.js](https://nodejs.org/) (v18 or later) installed, then run:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+## React Compiler
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Project structure
+## Expanding the ESLint configuration
 
-```
-src/
-├── api/          # API client and backend request helpers
-├── components/   # Reusable UI components (Navbar, Layout, etc.)
-├── pages/        # Route-level page components
-├── App.jsx       # Route definitions
-├── main.jsx      # App entry point
-└── index.css     # Global styles + Tailwind imports
-```
-
-## Scripts
-
-| Command         | Description                          |
-| --------------- | ------------------------------------ |
-| `npm run dev`   | Start the development server         |
-| `npm run build` | Build for production                 |
-| `npm run preview` | Preview the production build locally |
-
-## Environment variables
-
-Create a `.env` file in this folder to override defaults:
-
-```
-VITE_API_BASE_URL=http://localhost:8000
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
